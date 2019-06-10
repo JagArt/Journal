@@ -1,5 +1,7 @@
 package by.arro.journal.presentation.main
 
+import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import by.arro.journal.R
@@ -54,5 +56,9 @@ class MainActivity : AppCompatActivity(), MainView {
         } ?: MainPresenterImpl().apply {
             onFirstAttachView(this@MainActivity)
         }
+    }
+
+    companion object {
+        fun getIntent(context: Context) = Intent(context, MainActivity::class.java)
     }
 }
