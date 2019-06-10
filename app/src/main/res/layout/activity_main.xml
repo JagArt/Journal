@@ -4,14 +4,27 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".main.MainActivity">
+	tools:context=".presentation.main.MainActivity">
 
 	<TextView
+		android:id="@+id/textViewSum"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="142" />
+
+	<Button
+		android:id="@+id/buttonUpdate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="48dp"
+		android:text="@string/plus"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:text="+" />
 
 </android.support.constraint.ConstraintLayout>

@@ -11,7 +11,7 @@
             android:theme="@style/AppTheme">
 
         <activity
-                android:name=".launch.LaunchActivity"
+                android:name="by.arro.journal.presentation.launch.LaunchActivity"
                 android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".main.MainActivity"/>
+        <activity android:name="by.arro.journal.presentation.main.MainActivity"/>
     </application>
 
 </manifest>
